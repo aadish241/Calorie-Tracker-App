@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="page-heading">Calorie Tracker App</p>
+    <div class="navbar">
+    <button type="button" onclick="calcalcfunc()">Calorie Calculator</button>
+    <button type="button" onclick="calcountfunc()">Calorie Counter</button>
+    <button type="button" onclick="mealplanfunc()">Meal Plans</button>
+    </div>
+    <br><br>
+    <div class="calorie-calc-page" id="calorie-calc-page">
+    <label>Please enter your weight (kgs) 
+    <input type="text" id="weight-val"></label><br><br>
+    <label>Please enter your height (cm) 
+    <input type="text" id="height-val"></label><br><br>
+    <label>Please enter your age (years) 
+    <input type="text" id="age-val"></label><br><br>
+    <button id="submitstatsm">Calculate Maintenance Calories for Male</button>
+    <button id="submitstatsf">Calculate Maintenance Calories for female</button>
+    <p id="calresult">Your maintenance calories are:</p>
+    <div class="loss-gain-values">
+    <p>For Weight Loss:</p>
+    <p id="weightlosscal">-500 cal</p>
+    <p>For Weight Gain:</p>
+    <p id="weightgaincal">+300 cal</p>
+    </div>
+    </div>
+    <div class="calorie-count-page" id="calorie-count-page">
+    <p>Actual Count xyz</p>
+    <label>+
+    <input type="text" placeholder="Enter Calories to be added" id="cal+"></label>
+    <button>Add Calories</button>
+    <br><br>
+    <label>-
+    <input type="text" placeholder="Enter Calories to be subtracted" id="cal-"></label>
+    <button>Subtract Calories</button><br><br>
+    <button>Reset Count</button>
+    </div>
+    <div id="meal-plan-page">
+    here are the available meal plans.
+    </div>
+
+    
+<script src="script.js"></script>
+</body>
+</html>
