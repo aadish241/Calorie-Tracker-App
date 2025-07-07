@@ -136,13 +136,19 @@ margin-top: -40px;
 }
 #addcalbtn{
     background-color: rgb(255, 0, 0);
+    transition: scale 0.5s;
+}
+#addcalbtn:hover, #subcalbtn:hover, #resetbtn:hover{
+scale: 110%;
 }
 #subcalbtn{
     background-color: green;
     padding-left: -4px;
+    transition: scale 0.5s;
 }
 #resetbtn{
     background-color: rgb(69, 69, 249);
+    transition: scale 0.5s;
 }
 #subcalbtn, #resetbtn, #addcalbtn{
     font-weight: bold;
