@@ -9,20 +9,22 @@
 <body>
     <p class="page-heading">Calorie Tracker App</p>
     <div class="navbar">
-    <button type="button" onclick="calcalcfunc()">Calorie Calculator</button>
-    <button type="button" onclick="calcountfunc()">Calorie Counter</button>
-    <button type="button" onclick="mealplanfunc()">Meal Plans</button>
+    <button class="navbtn" id="calcalcbtn" type="button" onclick="calcalcfunc()">Calorie Calculator</button>
+    <button class="navbtn" id="calcountbtn" type="button" onclick="calcountfunc()">Calorie Counter</button>
+    <button class="navbtn" id="mealplanbtn" type="button" onclick="mealplanfunc()">Meal Plans</button>
     </div>
     <br><br>
     <div class="calorie-calc-page" id="calorie-calc-page">
-    <label>Please enter your weight (kgs) 
-    <input type="text" id="weight-val"></label><br><br>
-    <label>Please enter your height (cm) 
-    <input type="text" id="height-val"></label><br><br>
-    <label>Please enter your age (years) 
-    <input type="text" id="age-val"></label><br><br>
+    <div class="statinputsection">
+    <label class="statlabel">Please enter your weight (kgs) </label>
+    <input class="statform" type="text" id="weight-val"><br><br>
+    <label class="statlabel">Please enter your height (cm) </label>
+    <input class="statform" type="text" id="height-val"><br><br>
+    <label class="statlabel">Please enter your age (years) </label>
+    <input class="statform" type="text" id="age-val"><br><br>
+    </div>
     <button id="submitstatsm">Calculate Maintenance Calories for Male</button>
-    <button id="submitstatsf">Calculate Maintenance Calories for female</button>
+    <button id="submitstatsf">Calculate Maintenance Calories for Female</button>
     <p id="calresult">Your maintenance calories are:</p>
     <div class="loss-gain-values">
     <p>For Weight Loss:</p>
@@ -32,15 +34,16 @@
     </div>
     </div>
     <div class="calorie-count-page" id="calorie-count-page">
-    <p>Actual Count xyz</p>
+    <p>Calories Consumed Today:</p>
+    <p id="actual-count">0</p>
     <label>+
-    <input type="text" placeholder="Enter Calories to be added" id="cal+"></label>
-    <button>Add Calories</button>
+    <input class="countformadd" type="text" placeholder="Enter Calories to be added" id="cal+"></label>
+    <button id="addcalbtn">Add Calories</button>
     <br><br>
-    <label>-
-    <input type="text" placeholder="Enter Calories to be subtracted" id="cal-"></label>
-    <button>Subtract Calories</button><br><br>
-    <button>Reset Count</button>
+    <label class="minussign">-</label>
+    <input class="countformminus" type="text" placeholder="Enter Calories to be subtracted" id="cal-">
+    <button id="subcalbtn">Subtract Calories</button><br><br>
+    <button id="resetbtn">Reset Count</button>
     </div>
     <div id="meal-plan-page">
     The meal plans will show here:
