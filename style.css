@@ -1,8 +1,22 @@
+
+
+.app-container{
+    padding: 15px;
+    background-color: rgb(213, 211, 211);
+    border-radius: 20px;
+    max-width: 500px;
+    min-height: 650px;
+    margin: auto;   
+}
+
+
+
 .page-heading{
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: -1px;
+   
 }
 .navbar{
     text-align: center;
@@ -10,14 +24,15 @@
 }
 .navbtn{
     padding: 10px;
-    margin: 10px;
-    width: 150px;
+    margin: px;
+    width: 140px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     background-color: rgb(231, 240, 240);
     border-style: none ;
     border-radius: 4px;
     transition: background-color 0.5s, color 0.5s;
+    
     
 }
 
@@ -30,15 +45,18 @@
 }
 
 #calorie-calc-page{
+   margin-top: 30px;
    text-align: center;
 }
 #calorie-count-page{
+ margin-top: 30px;
    text-align: center;
    display: none;
 }
 #meal-plan-page{
     text-align: center;
     display: none;
+    margin-top: -40px;
 }
 
 .statinputsection{
@@ -116,9 +134,9 @@ margin-top: -40px;
 }
 #actual-count{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    margin-top: -10px;
-    margin-bottom: 10px;
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 .countformadd, .countformminus{
     font-family: Arial, Helvetica, sans-serif;
@@ -158,3 +176,68 @@ scale: 110%;
     border-radius: 4px;
     width: 130px;
 }
+
+.foodcatbtn{
+    border-style: none;
+    padding: 5px;
+    border-radius: 20px;
+    width: 120px;
+    transition: background-color 0.4s ;
+}
+.daybtn{
+    border-style: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 20px; 
+    width: 55px; 
+    transition: color 0.4s, background-color 0.4s;
+}
+.daybtn:hover{
+    background-color: black;
+    color: white;
+}
+
+.dayloc{
+    margin-top: -50px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: -10px;
+    display: none;
+}
+
+
+#veg:hover{
+    background-color: green;
+}
+#nonveg:hover{
+    background-color: rgb(179, 0, 0);
+}
+#egg:hover{
+     background-color: rgb(255, 191, 0);
+}
+
+#meal-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5px;
+    flex-flow: wrap;
+    
+}
+
+.mealcard{
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: none;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(213, 211, 211) ;
+    max-width: 170px;
+    min-width: 170px;
+    min-height: 165px;
+    max-height: 165px;
+    margin: 5px;
+    color: white;
+    transition: background-color 1s;
+    
+}
+

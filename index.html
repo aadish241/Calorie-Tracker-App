@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="app-container">
     <p class="page-heading">Calorie Tracker App</p>
     <div class="navbar">
     <button class="navbtn" id="calcalcbtn" type="button" onclick="calcalcfunc()">Calorie Calculator</button>
@@ -46,7 +47,29 @@
     <button id="resetbtn">Reset Count</button>
     </div>
     <div id="meal-plan-page">
-    The meal plans will show here:
+    <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;"> Meal Plans for you to meet your calorie targets:</p>   
+    <div class="food-category">
+    <button class="foodcatbtn" id="veg">Vegetarian</button>
+    <button class="foodcatbtn" id="nonveg">Non-Vegetarian</button>
+    <button class="foodcatbtn" id="egg">Eggetarian</button>    
+    </div><br>
+    <div class="weekdays">
+    <button class="daybtn" id="monday">MON</button>
+    <button class="daybtn" id="tuesday">TUE</button>
+    <button class="daybtn" id="wednesday">WED</button>
+    <button class="daybtn" id="thursday">THU</button>
+    <button class="daybtn" id="friday">FRI</button>
+    <button class="daybtn" id="saturday">SAT</button>
+    <button class="daybtn" id="sunday">SUN</button>
+    <p class="dayloc">_</p>
+    </div><br>
+    <div id="meal-cards">
+    <div class="mealcard" id="breakfast"></div>
+    <div class="mealcard" id="lunch"></div>
+    <div class="mealcard" id="evesnack"></div>
+    <div class="mealcard" id="dinner"></div>
+    </div>
+    </div>
     </div>
 
     
